@@ -1,4 +1,4 @@
-#! /usr/bin/env node  //SHAbANG
+#! /usr/bin/env node  //SHABANG
 
 
 import inquirer from "inquirer";
@@ -12,7 +12,7 @@ const answer= await inquirer.prompt([
 choices:["Addition","Subraction","Multiplication","Division"]}
 ]);
 
-if(answer.operator ===  "Addition"){
+if(answer.operator === "Addition"){
     console.log(answer.firstnumber + answer.secondnumber)
 }
 else if (answer.operator === "Subraction"){
@@ -25,5 +25,5 @@ else if (answer.operator === "Division"){
     console.log(answer.firstnumber / answer.secondnumber)
 }
 else{
-    console.log("not operating")
+    console.log("Please select a valid operator")
 }
